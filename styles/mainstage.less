@@ -1,10 +1,26 @@
 .mainstage {
   width: 90vw;
   height: 28vw;
-  background: orange;
+  background: lighten(@page-bg-primary, 20%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 3vw auto;
+  margin: 3vw auto 0;
   position: relative;
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2vw;
+  line-height: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5vw;
+  > * {
+    text-align: left;
+    &:empty {
+      display: none;
+    }
+  }
 }

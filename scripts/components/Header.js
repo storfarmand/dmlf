@@ -19,6 +19,9 @@ export default class Header extends React.Component {
   }
   render() {
     const HeaderTag = `h${this.props.type}`;
+    const styles={
+      fontSize: (this.props.fontfactor / 2 + .5) + 'rem'
+    }
     return (
       <HeaderTag
         class={[
@@ -26,6 +29,7 @@ export default class Header extends React.Component {
           this.props.addclass ? this.props.addclass : ''
         ].join(' ')}
         ref={(component) => {this.header = component}}
+        style={styles}
       >
         {this.props.text}
       </HeaderTag>
