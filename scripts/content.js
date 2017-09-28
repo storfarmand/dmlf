@@ -74,6 +74,13 @@ const content = {
         "Backout plan",
         "No second guessing"
       ]
+    },
+    {
+      heading:"Thank you!",
+      left: [
+        "https://github.com/storfarmand/dmlf"
+      ],
+      right: []
     }
   ]
 };
