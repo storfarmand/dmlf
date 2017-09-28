@@ -4,7 +4,8 @@ export default class Mainstage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mounted: false
+      mounted: false,
+      page: props.page
     };
   }
   componentDidMount() {
@@ -17,10 +18,12 @@ export default class Mainstage extends React.Component {
         mounted: false
     })
   }
+  componentDidUpdate() {
+  }
   render() {
     const styles={
       fontSize: (this.props.fontfactor / 2 + .3) + 'rem',
-      lineHeight: (this.props.fontfactor / 2 + .4) + 'rem',
+      lineHeight: (this.props.fontfactor / 2 + .5) + 'rem',
     }
     const leftContent = this.props.content.left.map((item, idx) => {
       return <div key={idx}>{item}</div>

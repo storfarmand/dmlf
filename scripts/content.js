@@ -15,25 +15,65 @@ const content = {
         "7 years at LEGO",
         "Lead Developer"
       ],
-      right: [
-        "Right text 1"
-      ]
+      right: []
     },
     {
-      heading:"",
+      heading:"Changes",
       left: [
-        "Left text 2"
+        "Right-sizing",
+        "The Pause",
+        "S.P.A.C.E. Program",
+        "Standards Approval",
+        "Offshore Project"
       ],
       right: [
-        "Right text 2"
+        "User Testing",
+        "A/B Testing",
+        "Tracking",
+        "SEO",
+        "Tooling"
       ]
     },
     {
-      heading:"",
+      heading:"S.P.A.C.E. (Processes)",
       left: [
-        "Left text 3"
+        "Browser Support Model",
+        "Digital Collaboration Agreement",
+        "Performance",
+        "Validation",
+        "Technology Review Process"
       ],
       right: []
+    },
+    {
+      heading:"S.P.A.C.E. (Standards)",
+      left: [
+        "Accessibility",
+        "LEGO Grid",
+        "HTML",
+        "Javascript",
+        "RIX"
+      ],
+      right: [
+        "Mobile",
+        "Responsive Design Spec",
+        "Living Design Guide"
+      ]
+    },
+    {
+      heading:"Change Workflow",
+      left: [
+        "Right Technology",
+        "Team Involvement",
+        "Management buy-in",
+        "Training"
+      ],
+      right: [
+        "Document EVERYTHING",
+        "Short-term wins",
+        "Backout plan",
+        "No second guessing"
+      ]
     }
   ]
 };

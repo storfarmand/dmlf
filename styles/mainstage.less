@@ -1,7 +1,7 @@
 .mainstage {
   width: 90vw;
   height: 28vw;
-  background: lighten(@page-bg-primary, 20%);
+  background: lighten(@page-bg-primary, 25%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -17,6 +17,11 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 5vw;
+  transition: transform .3s linear;
+  transform: scale(1);
+  &.hide {
+    transform: scale(0);
+  }
   > * {
     text-align: left;
     &:empty {

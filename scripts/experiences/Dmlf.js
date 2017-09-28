@@ -40,7 +40,6 @@ export default class Dmlf extends React.Component {
         mounted: true
     });
     window.addEventListener('keyup', (evt) => {
-      console.log(evt.key);
       const prevKeys = ['arrowleft', 'arrowup', 'p', 'b'];
       if (prevKeys.indexOf(evt.key.toLowerCase()) >= 0) {
         KeyboardActions.navigate({direction: 'prev'});
@@ -87,13 +86,14 @@ export default class Dmlf extends React.Component {
         <Header
           addclass="header-experience"
           type="1"
-          text={this.props.content.headings.main}
+          text={this.props.content.pages[this.state.page].heading}
           fontfactor={this.state.fontFactor}
         />
         <Mainstage
           config={this.state.config}
           fontfactor={this.state.fontFactor}
           content={this.props.content.pages[this.state.page]}
+          page={this.state.page}
         />
         <div className="btn-group horizontal">
           <button
